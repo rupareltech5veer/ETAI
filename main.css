@@ -11,7 +11,6 @@ h1{
     font-family: 'New Rocker', cursive;
     text-align: center;
 }
-}
 #tag{
     color: rgb(14, 15, 15);
     font-family: monospace;
@@ -37,7 +36,7 @@ h1{
     border-radius: 20px;
     
 }
-#paragraph{
+p{
     color: rgb(2, 0, 1);
     font-weight: 900;
     font-size:x-large;
@@ -51,6 +50,9 @@ h1{
     border-radius: 20px;
     padding-bottom: 20px;
     
+}
+#heading{
+    font-size: 100px;
 }
 button{
     color: #000302;
