@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>More Info</title>
+<style>
+body {
+    background-image: url('https://149349300.v2.pressablecdn.com/wp-content/uploads/2019/06/3d-cube-background-4k-yo-1210x642.jpg');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  margin-right: 150px;
+  margin-left: 150px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: rgb(234, 231, 240);
+  font-size: 50px;
+}
+h2{
+    color: rgb(240, 231, 231);
+}
+p{
+  color: rgb(5, 5, 0);
+  font-weight: 900;
+  font-size: 17px;
+  margin: 20px;
+}
+#main{
+  background-color: rgba(82, 223, 248, 0.5);
+  border-radius: 20px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<h1>How we made our Device</h1>
+<p>We started off by defining the problem we would solve which is helping elderly people and people with special needs. Then we created a solution for the problem, which is using Machine learning to perform tasks by hand gestures. The we used lobe to train our model. We decided that our device would perform 5 functions: Turning lighs on and off, turning the TV on and off, turning the volume up and down, call/send messages in case of emergencies, and translate sign language into text. We first figured out what gestures we would use for the first four functions and trained Lobe (whcich is a ML platform) to predict the results as per our input (hand gestures). We faced many challenges during this process becuase you have to take a lot of images for the model to train itself and it is not always 100% accurate becuase there are other factors that can confuse the model, like the background, different people, lighting, e.t.c. We also faced challanges to code our ML program in python because we needed to turn on the camera and it was glitching a lot. We also had to code our program to take a picture every couple seconds and predict the result so that it can work like a video with multiple frames and you don't have to click a button to take a picture so when it takes pictures every couple seconds, it will predict the correct output when we do the corresponding hand gesture and if there are no hand gestures it will predict 'nothing' and do nothing. After finishing the programing, we had to put the software in the hardware and we were origanally going to use a jetson nano but due to technical issues it wasn't working so we had to use rasspberry pi which didn't work either. We also faced challenges when trying to figure out how to connect the Jetson Nano to our light, TV, e.t.c.</p>
+<h1>What Inspired Us</h1><br></br>
+<p> Our grandfather inspired us to make this device. He has difficulty in turning on and off the lights in the main room because the swith is at the bottom and he can't bend down. Then we programmed our Amazon alexa to turn on the lights when someone tells it to but pur grandfather isn't able to activate Alexa because the amazon AI doesn't understand him when he talks. So we decided to create a device that would turn on and off the lights for him with just a thumbs up or thumbs down! After that we decided to create a decive that can not only start the lights but also do other things people wish they could do by sitting down!</p>
+<h1>The Different Device Functions:</h1>
+<p><a href="https://docs.google.com/drawings/d/1Od5qsmowtdvUUgnr4cH4DjL-Ny0Z0pigmTe_WfA9HdI/edit?usp=sharing">Diagrams that show which hand gesture means what in our ML</a></p>
+<br></br>
+<h2>Turning The light on and Off</h2>
+<p>This was our origanal idea to help of grandfather. We trained Lobe so that it predicts 'Lights On' when you do a thumbs-up and it predicts 'Lights Off' when you do a thumbs-down. Then our lights work without having to use the switch! We used IFTTT to and smart swith on our light to turn the lights on and off it the Prediction in our ML resulted in 'Lights on' or 'Lights off'</p>
+<br></br>
+<h2>Turning The TV on and Off</h2>
+<p>For this we used the hand gestures: open hand = TV ON and closed fist = TV OFF. This function is used to turn on our TV! We used IFTTT and a smart swith called Kasa which will turn on and off if the result of our ML is either 'TV on' or 'TV off'</p>
+<br></br>
+<h2>Turning The Volume up and down</h2>
+<p>For volume we did the hand gesture of  an L which is made by just opening your index finger and thumbs for volume up and doing the same gesture but touching your index finger to your thumb means volume down. This can be used to turn up and down your TV, computer or other device volumes! We were not able to create this partly because of our hardware problem and because of other challenges we faced.</p>
+<br></br>
+<h2>Calling 911 during Emergencies</h2>
+<p>Creating an X with your 2 index finger means call for emergency. When this happens, it will call your emergency contacts. We can improve upon this in the future so that it becomes more accurate and we will be able to call 911! For now we used IFTTT to call a number when the the predicted output in our ML results in 'Emergency'</p>
+<br></br>
+<h2>Translating sign language into text</h2>
+<p>This will use sign language hand gestures. After we train the meaning of sign language in Lobe, we export the program into the Jetson Nano and we put a LED Display to show the translated text. Due to our broken component problem we were only able to create the ML and a code that writes the words that you are doing in sign language. Check out the demo video in the front page. What we have created isn't the whole sign language, just a few words but in the future we can build upon our idea and make it better!</p>
+<br></br>
+<a href="https://codepen.io/jia-j-ruparel/pen/bGwzBJe">Check out the online ML for sign language!</a>
+<h1>Thank You!</h1>
+<a href="index.html"> <button type="button">Go Back</button> </a>
+<br></br>
+</div>
+</body>
+</html>

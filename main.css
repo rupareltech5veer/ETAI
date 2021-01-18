@@ -1,0 +1,87 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/187161.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+    color: rgb(246, 244, 248);
+    font-size: 300%;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+}
+}
+#tag{
+    color: rgb(14, 15, 15);
+    font-family: monospace;
+    text-align: center;
+}
+#top{
+    margin: 50px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+#middle{
+    margin: 50px;
+    margin-top: 200px;
+    text-align: center;
+}
+#middle2{
+    background-color: rgba(255, 115, 0, 0.5);
+    border-radius: 20px;    
+}
+#middle1{
+    background-color: rgba(0, 255, 106, 0.5);
+    border-radius: 20px;
+    
+}
+#paragraph{
+    color: rgb(2, 0, 1);
+    font-weight: 900;
+    font-size:x-large;
+    font-family: monospace;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#bottom{ 
+    margin: 50px;
+    background-color: rgba(88, 74, 74, 0.7);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+}
+button{
+    color: #000302;
+    background-color: rgb(240, 234, 240);
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    height: 75px;  
+    border-radius: 80px;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+#formLink{
+    color: green;
+}
+#num1{
+    float: left;
+ 	left: 25px;
+
+}
+#num2{
+   float: right;
+   right: -1020px;
+}
+video{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+}
